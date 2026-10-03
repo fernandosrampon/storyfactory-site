@@ -1,0 +1,24 @@
+:root { --bg: #0d0f14; --panel: #151922; --line: #262c3a; --text: #e9ecf3; --muted: #9aa3b5; --accent: #8b6cff; }
+@media (prefers-color-scheme: light) { :root { --bg: #f6f7fb; --panel: #fff; --line: #e2e5ee; --text: #151821; --muted: #5d6578; --accent: #6d4cf0; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--accent); }
+header, main, footer { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 26px; padding-bottom: 10px; flex-wrap: wrap; }
+.brand { font-weight: 800; font-size: 20px; color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.mark { width: 30px; height: 30px; border-radius: 9px; background: linear-gradient(135deg, #8b6cff, #e879f9); display: grid; place-items: center; color: #fff; font-size: 14px; }
+nav a { margin-left: 18px; color: var(--muted); text-decoration: none; font-weight: 600; }
+nav a:hover { color: var(--text); }
+main { padding-top: 26px; padding-bottom: 50px; }
+h1 { font-size: 34px; line-height: 1.2; margin: 18px 0 10px; }
+h2 { font-size: 21px; margin-top: 34px; }
+.lead { color: var(--muted); font-size: 18px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 18px 0; }
+.yt { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; }
+.yt .play { width: 26px; height: 18px; border-radius: 5px; background: #ff0033; position: relative; display: inline-block; }
+.yt .play::after { content: ""; position: absolute; left: 10px; top: 5px; border-left: 8px solid #fff; border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+footer { border-top: 1px solid var(--line); padding-top: 18px; padding-bottom: 40px; color: var(--muted); font-size: 14px; }
+footer a { margin-right: 16px; }
+.small { font-size: 14px; color: var(--muted); }
